@@ -1,0 +1,816 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#head-contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    padding: 15px 7%;
+    font-size: 25px;
+}
+
+.bi-reception-4 {
+    color: rgb(46, 130, 255);
+    font-size: 33px;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    padding: 10px 6%;
+    border-top: solid 1px rgb(155, 155, 155);
+}
+
+
+#l-name {
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+
+#l-name-maening {
+    font-size: 12px;
+    font-style: italic;
+}
+
+#nav-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quote-btn {
+    background-color: rgb(32, 84, 255);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#quote-btn:hover {
+    background-color: rgb(0, 28, 121);
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+#nav-links a {
+    color: white;
+}
+
+header {
+    background-image: url(../lsomail/images/woman\ with\ catton.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: change 10s infinite ease-in-out;
+    animation-duration: 20s;
+    animation-delay: 10s;
+}
+
+/* ===========================================================================menu start  */
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transition: 1s ease;
+    background: #1f242d;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: max-content;
+    overflow: scroll;
+    z-index: 4;
+    background: rgb(250, 243, 243);
+    transition: 1s ease;
+    transform: translateX(100%);
+}
+
+.showMenu {
+    transform: translateX(0);
+}
+
+
+.transparentBcg {
+    visibility: visible;
+}
+
+@media screen and (min-width: 500px) {
+    .menu {
+        width: 90%;
+        min-height: 70%;
+        overflow-y: hidden;
+        color: #e4e4e4;
+        box-shadow: 0 0 6px #1f242d;
+    }
+}
+
+.close-menu {
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.menu-item {
+    background-color: rgb(250, 243, 243);
+
+}
+
+/* menu items */
+#about-icon {
+    border: solid 1px white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+#itemsreg,
+#items {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #1f242d;
+    font-weight: 500;
+    font-size: medium;
+    line-height: 25px;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+#items-service,
+#itemsrate {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #1f242d;
+    font-weight: 500;
+    font-size: medium;
+    line-height: 25px;
+    padding: 0.5rem;
+    z-index: 1;
+    border-bottom: solid 1px grey;
+}
+
+
+#item-about {
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #1f242d;
+    font-size: larger;
+    line-height: 25px;
+    background-color: rgb(0, 76, 255);
+    color: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#item-about:hover,
+#itemsreg,
+#items-service:hover,
+#itemsrate:hover,
+#items:hover {
+    color: #1f242d;
+    opacity: 0.7;
+    background-color: rgb(214, 214, 214);
+}
+
+#times {
+    color: #1f242d;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 900;
+}
+
+#times:hover {
+    background-color: rgb(188, 188, 188);
+    opacity: 0.7;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* =================================================================menu end */
+
+
+#header-style {
+    background-color: rgba(54, 54, 54, 0.6);
+    height: 700px;
+}
+
+.bi-envelope,
+.bi-telephone-fill {
+    color: white;
+    cursor: pointer;
+}
+
+.bi-envelope:hover,
+.bi-telephone-fill:hover {
+    color: rgb(0, 79, 250);
+}
+
+#head-commnt {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin: 70px 80px;
+}
+
+#head-commnt h1 {
+    font-size: 50px;
+    font-weight: 800;
+    padding: 15px 0px;
+}
+
+#head-commnt h2 {
+    font-weight: 800;
+    font-size: 30px;
+    width: 600px;
+}
+
+#track-button {
+    padding: 0px 6%;
+}
+
+#track-button button {
+    background-color: rgb(0, 79, 250);
+    padding: 16px 33px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#chat-icons {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: right;
+    margin: 10px 2%;
+    gap: 15px;
+    right: 10px;
+    z-index: 4;
+    top: 530px;
+}
+
+#chat-msg {
+    background-color: rgb(53, 106, 253);
+    padding: 22px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+
+}
+
+#chat-msg:hover {
+    background-color: white;
+}
+
+#chat-msg i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#chat-btn {
+    padding: 8px;
+    font-size: 18px;
+    color: rgb(94, 94, 94);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ====================================BODY SECTION START */
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 10px auto;
+    padding: 60px 50px;
+    box-shadow: 0 50px 10px #e7e7e7;
+    border-radius: 20px;
+    position: absolute;
+    top: 600px;
+    background-color: white;
+    left: 100px;
+}
+
+#quick-service-el {
+    color: rgb(72, 72, 255);
+}
+
+#text-input,
+#tel-input {
+    padding: 10px;
+    font-size: 17px;
+    background-color: #f1f1f1;
+    border: solid 1px #0ef;
+    outline: none;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    padding: 13px 60px;
+    border: none;
+    color: white;
+    background-color: rgb(72, 72, 255);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#img-man {
+    width: 550px;
+    height: 400px;
+}
+
+#about-section {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 200px 8%;
+}
+
+#plc {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+#about-text {
+    width: 500px;
+    line-height: 36px;
+    color: #1f242d;
+}
+
+#p-on-p {
+    position: absolute;
+    top: 1200px;
+    left: 360px;
+    width: 300px;
+    height: 260px;
+}
+
+.bi-patch-check-fill {
+    color: rgb(53, 53, 255);
+    margin: 5px;
+    font-size: 20px;
+}
+
+#read-btn {
+    color: white;
+    background-color: rgb(53, 53, 255);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+#track-box {
+    box-shadow: 0 0 10px #1f242d;
+    padding: 30px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 5px;
+    position: relative;
+    top: -150px;
+    left: 50px;
+    /* visibility: hidden; */
+}
+
+#track-box input {
+    padding: 10px 15px;
+    outline: none;
+    border: solid 1px #0ef;
+}
+
+#track-box button {
+    padding: 11px;
+    color: white;
+    background-color: rgb(40, 98, 255);
+    border: none;
+}
+
+/* ===========================================================================OUR SERVICES */
+#services {
+    background-color: #1f242d;
+    height: 500px;
+}
+
+#achieves {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    /* top: -80px; */
+    background-color: #1f242d;
+    padding: 50px 0px;
+}
+
+#clients {
+    text-align: center;
+    padding: 50px 40px;
+    background-color: rgb(212, 212, 212);
+    color: black;
+    width: 280px;
+    font-weight: 600;
+}
+
+#countries {
+    text-align: center;
+    padding: 50px 40px;
+    background: rgb(34, 86, 255);
+    width: 280px;
+    color: white;
+    font-weight: 600;
+}
+
+#shipments {
+    text-align: center;
+    padding: 50px 40px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    width: 280px;
+    font-weight: 600;
+}
+
+#years {
+    text-align: center;
+    padding: 50px 40px;
+    background-color: rgb(34, 86, 255);
+    color: white;
+    width: 280px;
+    font-weight: 600;
+}
+
+/* ========================================== MEDIA RESPONSIVENESS */
+
+@media screen and (max-width:1300px) {
+    form {
+        display: block;
+        text-align: center;
+        /* width: 85%; */
+        margin-bottom: 20px;
+        padding: 60px 50px;
+        box-shadow: 0 50px 10px #e7e7e7;
+        border-radius: 20px;
+        position: absolute;
+        top: 600px;
+        background-color: white;
+        left: 100px;
+    }
+
+    form div {
+        padding: 10px;
+    }
+
+    #text-input,
+    #tel-input {
+        padding: 10px;
+        font-size: 17px;
+        background-color: #f1f1f1;
+        border: solid 1px #0ef;
+        outline: none;
+        border-radius: 5px;
+        width: 500px;
+    }
+
+    #quick-service-el {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #submit-btn {
+        padding: 13px 60px;
+        border: none;
+        color: white;
+        background-color: rgb(72, 72, 255);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 500px;
+    }
+
+    #img-man {
+        width: 100%;
+        height: 600px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    #about-section {
+        /* margin-top: 600px; */
+        display: block;
+        align-items: start;
+        justify-content: space-between;
+        margin: 400px 0 200px 5%;
+        text-align: center;
+    }
+
+    #p-on-p {
+        display: none;
+
+    }
+
+    #about-text {
+        display: block;
+        width: 100%;
+        line-height: 36px;
+        color: #1f242d;
+        text-align: center;
+        padding: 10px 10%;
+    }
+}
+
+.bi-list {
+    color: white;
+    background-color: rgb(53, 124, 255);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nav-menu {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+
+    #head-commnt h1,
+    #head-commnt h2 {
+        width: fit-content;
+        text-align: left;
+        font-size: 25px;
+    }
+
+
+    #nav-links {
+        display: none;
+    }
+
+    #quote-btn {
+        display: none;
+    }
+
+    #nav-menu {
+        display: contents;
+        font-size: 20px;
+    }
+
+    form {
+        display: block;
+        text-align: center;
+        /* width: 85%; */
+        margin-bottom: 20px;
+        padding: 60px 40px;
+        box-shadow: 0 50px 10px #e7e7e7;
+        border-radius: 20px;
+        position: absolute;
+        top: 600px;
+        background-color: white;
+        left: 60px;
+    }
+
+    form div {
+        padding: 10px;
+    }
+
+    #text-input,
+    #tel-input {
+        padding: 10px;
+        font-size: 17px;
+        background-color: #f1f1f1;
+        border: solid 1px #0ef;
+        outline: none;
+        border-radius: 5px;
+        width: 350px;
+    }
+
+    #quick-service-el {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #submit-btn {
+        padding: 13px 60px;
+        border: none;
+        color: white;
+        background-color: rgb(72, 72, 255);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 350px;
+    }
+
+    #achieves {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    form {
+        display: block;
+        text-align: center;
+        /* width: 85%; */
+        margin-bottom: 20px;
+        padding: 60px 40px;
+        box-shadow: 0 50px 10px #e7e7e7;
+        border-radius: 20px;
+        position: absolute;
+        top: 600px;
+        background-color: white;
+        left: 40px;
+    }
+
+    form div {
+        padding: 10px;
+    }
+
+    #text-input,
+    #tel-input {
+        padding: 10px;
+        font-size: 17px;
+        background-color: #f1f1f1;
+        border: solid 1px #0ef;
+        outline: none;
+        border-radius: 5px;
+        width: 350px;
+    }
+
+    #quick-service-el {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #submit-btn {
+        padding: 13px 60px;
+        border: none;
+        color: white;
+        background-color: rgb(72, 72, 255);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 350px;
+    }
+
+    #achieves {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        flex-wrap: wrap;
+    }
+        .service-img {
+            display: block;
+            gap: 15px;
+            background-color: #1f242d;
+            color: white;
+        }
+}
+.text-service{
+    text-align: center;
+    padding: 10px;
+}
+.service-img{
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    gap: 15px;
+    background-color: #1f242d;
+    color: white;
+}
+
+ .first-img-display {
+     width: 30%;
+ }
+
+@media screen and (max-width: 1000px){
+    .service-img {
+            display: block;
+            text-align: center;
+            background-color: #1f242d;
+            color: white;
+            margin: auto 10px;
+        }
+        .first-img-display {
+            padding: 30px 0px;
+            margin: auto;
+            width: fit-content;
+        }
+ }
+
+#read-more{
+    border: none;
+    font-size: 18px;
+}
+
+.first-img-display img{
+    width: 400px;
+    height: 300px;
+}
+
+#content{
+    width: 500px;
+}
+#additional-services{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#work-img{
+    width: 600px;
+    transition: 0.5s;
+}
+#work-img:hover{
+    width: 610px;
+}
+#content p{
+    font-family: monospace;
+    font-size: 22px;
+}
+
+#add-service{
+    background-color: #1f242d;
+    padding: 55px 5%;
+}
+
+@media screen and (max-width:700px) {
+    #content {
+        width: 800px;
+        padding: 50px 0px;
+    }
+   #work-img {
+       width: 400px;
+       transition: 0.5s;
+   }
+    #work-img:hover {
+        width: 410px;
+    }
+     
+}
+
+ul li{
+    padding: 10px;
+    font-size: 21px;
+}
+
+#know-more{
+    background-color: rgb(0, 89, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 50px;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+#know-more:hover {
+    background-color: rgb(0, 43, 124);
+    border: none;
+    border-radius: 6px;
+    padding: 15px 50px;
+    color: white;
+    font-size: 20px;
+}
+/* ===================================================KEYFRAME START */
+@keyframes change {
+    5% {
+        background-image: url(../lsomail/images/man.jpg);
+    }
+}

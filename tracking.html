@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userInfo.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="tracking.css">
+    <script src="userinfo.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <span>
+                <img src="./logo/logo.webp" alt="">
+            </span>
+            <a href="index.html" id="web-name" class="text-decoration-none">
+                <i class="bi bi-reception-4 text-info"></i> LSO
+            </a>
+        </div>
+        <div id="nav-menu">
+            <span><i class="bi bi-list text-dark"></i></span>
+        </div>
+        <!-- =================================================nav menu overlay -->
+        <div class="menu-overlay">
+            <div class="menu">
+                <span class="close-menu">
+                    <a id="times">&times;</a>
+                </span>
+                <div class="menu-contents">
+                    <!-- menu items -->
+                    <div class="menu-item">
+                        <a id="items" href="index.html">Home</a>
+                        <a id="items" href="">Newsletter</a>
+                        <a id="items-service" href="service.html">Services</a>
+                        <a id="itemsrate" href="">Rates&nbsp;&&nbsp;Reviews</a>
+                        <a id="items" href="support.html">Support/Help</a>
+                        <a id="items" href="">Terms&nbsp;&&nbsp;policy</a>
+                    </div>
+                    <!-- end of menu items -->
+                </div>
+            </div>
+        </div>
+        <div id="nav-links">
+            <div>
+                <span><i class="bi bi-caret-down-fill text-dark"></i></span>
+                <button onclick="location.replace('index.html')">HOME</button>
+            </div>
+            <div>
+                <span><i class="bi bi-caret-down-fill text-dark"></i></span>
+                <button>SERVICES</button>
+            </div>
+            <div>
+                <span><i class="bi bi-caret-down-fill text-dark"></i></span>
+                <button>NEWS</button>
+            </div>
+            <div>
+                <span><i class="bi bi-caret-down-fill text-dark"></i></span>
+                <button>OTHERS</button>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <section id="shipment-details">
+        <div id="qr-details">
+            <div id="logo">
+                <img src="./logo/logo.webp" alt="">
+                <h3 class="text-info">TRACKING PROCESSESION</h3>
+            </div>
+            <div id="qr-code">
+                <img src="./images/R.png" alt="QR">
+                <h3 id="tracking-number">WPC024345255196-CARGO</h3>
+            </div>
+        </div>
+        <div>
+            <h3><i class="bi bi-arrow-down-square-fill text-info"></i> Shipper Information</h3>
+            <p><b>Raymond Gram</b></p>
+            <p>Ohio</p>
+            <p><a href="mailto:Raymondgrams214@gmai9l.com">Raymondgrams214@gmai9l.com</a></p>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3><i class="bi bi-arrow-up-square-fill text-info"></i> Receiver Information</h3>
+            <p><b>Pherreun Sak</b></p>
+            <p>807 Western Ave Lynn, MA 0190578158811610</p>
+            <p>14BLACKOUT1@gmail.com</p>
+            <br>
+            <button id="status" class="text-white bg-danger">SHIPMENT STATUS:</button>
+            <span id="status-readout">Pending <span id="first-dot">.</span>
+                <span id="second-dot">.</span>
+                <span id="third-dot">.</span>
+            </span>
+        </div>
+    </section>
+    <section id="map">
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="1300" height="500" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=los+angelos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://textcaseconvert.com"></a><br><a href="https://www.tabclocktab.com"></a><br>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: center;
+                        height: 560px;
+                        width: 100%;
+                    }
+                </style><a href="https://www.ongooglemaps.com">insert google map html</a>
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 500px;
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width:1300px) {
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 400px;
+                            width: 100%;
+                            margin: auto;
+                        }
+
+                        .mapouter {
+                            position: relative;
+                            text-align: center;
+                            height: 560px;
+                            width: 100%;
+                        }
+
+                        #qr-code {
+                            padding: 20px 0px;
+                        }
+
+                        #qr-code img {
+                            margin: 10px auto;
+                            text-align: center;
+                        }
+
+                        #shipment-details {
+                            display: block;
+                            text-align: center;
+                        }
+
+                        #tracking-number {
+                            text-align: center;
+                        }
+
+                        #qr-details {
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                </style>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h3>Reach us via mail</h3>
+            <a href="mailto:info@lsomail.com">- info@isomail.com</a>
+            <br>
+            <a href="mailto:lsomailsupport@gmail.com">- lsomailsupport@gmail.com</a>
+        </div>
+        <br>
+        <br>
+        <div>
+            <p>copyright &copy; 2007 at lsomail all right reserve</p>
+        </div>
+        <br>
+        <div id="desc-lso" style="color: #454a55;">
+            <p>Build Fast relationship with the LSOMAIL, speed and consistency is our passion... we work prio to our
+                clients desire. built under google lencense 0342669</p>
+        </div>
+    </footer>
+</body>
+
+</html>
